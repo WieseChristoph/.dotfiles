@@ -16,10 +16,10 @@ Enable lightdm
 systemctl enable lightdm.service
 ```
 
-Link configs
+Copy configs (linking does not work)
 
 ```bash
-stow lightdm -t /etc/lightdm/
+cp ./lightdm/* /etc/lightdm
 ```
 
 # GTK Theme
@@ -32,6 +32,14 @@ Change theme with `lxappearance`.
 nitrogen
 ```
 
+# Device settings
+
+Link xorg configs
+
+```bash
+stow xorg -t /etc/X11/xorg.conf.d/
+```
+
 # Packages
 
 ### Pacman
@@ -41,11 +49,14 @@ nitrogen
 - discord
 - dmenu
 - feh
+- flameshot
 - git
 - gnome-keyring
 - htop
 - i3-wm
 - i3status
+- kitty
+- light-locker
 - lightdm
 - lightdm-gtk-greeter
 - lxappearance
@@ -53,7 +64,6 @@ nitrogen
 - materia-gtk-theme
 - neovim
 - networkmanager
-- nitrogen
 - nvidia
 - openssh
 - pavucontrol
@@ -63,18 +73,22 @@ nitrogen
 - pipewire-alsa
 - pipewire-jack
 - pipewire-pulse
+- playerctl
+- polkit
+- polkit-gnome
 - seahorse
 - spotify-launcher
 - stow
 - tmux
+- ttf-firacode-nerd
 - ttf-jetbrains-mono
 - wget
 - wireplumber
+- xautolock
 - xdg-utils
 - xorg-server
 - xorg-xinit
 - xorg-xinput
-- xterm
 - zsh
 
 ### Yay

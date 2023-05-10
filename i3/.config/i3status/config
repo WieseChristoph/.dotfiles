@@ -1,6 +1,6 @@
 general {
         colors = true
-        interval = 5
+        interval = 1
 }
 
 order += "volume master"
@@ -10,44 +10,49 @@ order += "disk /"
 order += "memory"
 order += "cpu_temperature 0"
 order += "load"
-order += "tztime local"
+order += "tztime local_date"
+order += "tztime local_time"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid, %bitrate) %ip"
-        format_down = "W: down"
+        format_up = "󰀂  (%quality at %essid, %bitrate) %ip"
+        format_down = "󰀂  down"
 }
 
 ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
+        format_up = "󰲝  %ip (%speed)"
+        format_down = "󰲝  down"
 }
 
-tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+tztime local_date {
+        format = "  %d-%m-%Y"
+}
+
+tztime local_time {
+        format = "  %H:%M:%S  "
 }
 
 load {
-        format = "L: %1min"
+        format = "󰊚  %1min"
 }
 
 cpu_temperature 0 {
-        format = "T: %degrees °C"
+        format = "  %degrees °C"
         path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
 }
 
 memory {
-        format = "M: %used/%available"
+        format = "󰍛  %used / %available"
         threshold_degraded = "10%"
         format_degraded = "MEMORY: %free"
 }
 
 disk "/" {
-        format = "/: %used/%avail"
+        format = "  %used / %avail"
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format = "  %volume"
+        format_muted = "  muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
