@@ -1,6 +1,6 @@
 # Stow
 
-For most of the configs you just have to call `stow <folder>` to lint the configs to their right place. Except for those which have instrutions below (and the scripts folder).
+For most of the configs you just have to call `stow <folder>` to link the configs to their right place. Except for those which have instructions below (and the scripts folder).
 
 # Yay
 
@@ -42,6 +42,22 @@ Link xorg configs
 stow xorg -t /etc/X11/xorg.conf.d/
 ```
 
+# Google Drive
+
+Setup rclone for Google Drive
+
+**NAME IT "gdrive"!!!**
+
+```bash
+rclone config
+```
+
+Mount it to a folder (automatically done in i3 config)
+
+```bash
+rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
+```
+
 # Packages
 
 ### Pacman
@@ -81,6 +97,7 @@ stow xorg -t /etc/X11/xorg.conf.d/
 - playerctl
 - polkit
 - polkit-gnome
+- rclone
 - seahorse
 - smbclient
 - spotify-launcher
@@ -104,3 +121,7 @@ stow xorg -t /etc/X11/xorg.conf.d/
 
 - brave-bin
 - visual-studio-code-bin
+
+### Other
+
+- [TeX Live](https://www.tug.org/texlive/quickinstall.html)

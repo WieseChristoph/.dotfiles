@@ -253,6 +253,9 @@ exec --no-startup-id ~/.dotfiles/scripts/random_wallpaper.sh
 # Picom
 exec --no-startup-id picom
 
+# Google Drive
+exec --no-startup-id "rclone mount gdrive: ~/GDrive --vfs-cache-mode writes --daemon"
+
 # Start programs on workspaces
 assign [class="Brave-browser"] $ws2
 assign [class="discord"] $ws3
