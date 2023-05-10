@@ -1,3 +1,7 @@
+# Stow
+
+For most of the configs you just have to call `stow <folder>` to lint the configs to their right place. Except for those which have instrutions below (and the scripts folder).
+
 # Yay
 
 Installation
@@ -26,11 +30,9 @@ cp ./lightdm/* /etc/lightdm
 
 Change theme with `lxappearance`.
 
-# Wallpaper
+# Wallpapers
 
-```bash
-nitrogen
-```
+Simply store all your Wallpapers in `~/Wallpapers`.
 
 # Device settings
 
