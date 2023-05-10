@@ -52,6 +52,8 @@ stow xorg -t /etc/X11/xorg.conf.d/
 - flameshot
 - git
 - gnome-keyring
+- gvfs
+- gvfs-smb
 - htop
 - i3-wm
 - i3status
@@ -64,6 +66,7 @@ stow xorg -t /etc/X11/xorg.conf.d/
 - materia-gtk-theme
 - neovim
 - networkmanager
+- ntfs-3g
 - nvidia
 - openssh
 - pavucontrol
@@ -77,14 +80,18 @@ stow xorg -t /etc/X11/xorg.conf.d/
 - polkit
 - polkit-gnome
 - seahorse
+- smbclient
 - spotify-launcher
 - stow
+- thunderbird
 - tmux
 - ttf-firacode-nerd
 - ttf-jetbrains-mono
+- udisks2
 - wget
 - wireplumber
 - xautolock
+- xclip
 - xdg-utils
 - xorg-server
 - xorg-xinit
