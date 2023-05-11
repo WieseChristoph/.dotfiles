@@ -106,10 +106,15 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - materia-gtk-theme
 - neovim
 - networkmanager
+- noto-fonts
+- noto-fonts-cjk
+- noto-fonts-emoji
+- noto-fonts-extra
 - ntfs-3g
 - nvidia
 - nvidia-settings
 - openssh
+- papirus-icon-theme
 - pavucontrol
 - pcmanfm
 - picom
@@ -128,9 +133,11 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - stow
 - thunderbird
 - tmux
+- ttf-dejavu
 - ttf-firacode-nerd
 - ttf-jetbrains-mono
 - udisks2
+- vlc
 - wget
 - wireplumber
 - xautolock
@@ -149,3 +156,5 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 ### Other
 
 - [TeX Live](https://www.tug.org/texlive/quickinstall.html)
+- [nvm](https://github.com/nvm-sh/nvm)
+- [pnpm](https://github.com/nvm-sh/nvm)
