@@ -12,6 +12,27 @@ cd yay
 makepkg -si
 ```
 
+# Multilib (32-bit support)
+
+Enable multilib:
+
+Uncomment this in `/etc/pacman.conf`
+
+```bash
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+```
+
+Update package list
+
+```bash
+pacman -Sy
+```
+
+# Nvidia
+
+Display settings can be done with `nvidia-settings`.
+
 # LightDM
 
 Enable lightdm
@@ -76,6 +97,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - i3-wm
 - i3status
 - kitty
+- lib32-nvidia-utils
 - light-locker
 - lightdm
 - lightdm-gtk-greeter
@@ -86,6 +108,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - networkmanager
 - ntfs-3g
 - nvidia
+- nvidia-settings
 - openssh
 - pavucontrol
 - pcmanfm
