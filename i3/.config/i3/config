@@ -215,6 +215,12 @@ bar {
 # CUSTOM KEYS #
 ###############
 
+# Move workspace between monitors
+bindsym $mod+Control+j move workspace to output left
+bindsym $mod+Control+k move workspace to output down
+bindsym $mod+Control+l move workspace to output up
+bindsym $mod+Control+odiaeresis move workspace to output right
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10%
@@ -260,9 +266,9 @@ exec --no-startup-id picom
 exec --no-startup-id "rclone mount gdrive: ~/GDrive --vfs-cache-mode writes --daemon"
 
 # Start programs on workspaces
-assign [class="Brave-browser"] $ws2
+# assign [class="Brave-browser"] $ws2
 assign [class="discord"] $ws3
 assign [class="Spotify"] $ws3
-exec --no-startup-id brave
+# exec --no-startup-id brave
 exec --no-startup-id discord
 exec --no-startup-id spotify-launcher
