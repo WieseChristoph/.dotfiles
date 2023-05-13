@@ -127,6 +127,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - polkit-gnome
 - rclone
 - rofi
+- rustup
 - seahorse
 - smbclient
 - spotify-launcher
