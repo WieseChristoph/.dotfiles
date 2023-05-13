@@ -8,7 +8,7 @@ wallpaper_dir=~/Wallpapers
 wallpaper=$(shuf -e -n 1 $wallpaper_dir/* )
 
 # Replace current LightDM greeter background
-cp $wallpaper_dir/$wallpaper lightdm-background.jpg
+cp $wallpaper lightdm-background.jpg
 
 sleep 1h
 # Use feh to ad hoc set a new random background at a given time interval (without --random on feh, so it ist the same wallpaper for all screens)
