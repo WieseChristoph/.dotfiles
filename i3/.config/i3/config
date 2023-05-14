@@ -253,9 +253,6 @@ exec --no-startup-id "xautolock -time 30 -locker 'light-locker-command -l' -dete
 # Polkit
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-# Set wallpaper
-exec --no-startup-id "feh --randomize --bg-fill ~/Wallpapers/*"
-
 # Random wallpaper script
 exec --no-startup-id ~/.dotfiles/scripts/random_wallpaper.sh
 
