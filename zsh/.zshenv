@@ -1,7 +1,5 @@
-typeset -U path PATH
+# Texlive
+export PATH="/usr/local/texlive/2023/bin/x86_64-linux:$PATH"
 
-path=(/usr/local/texlive/2023/bin/x86_64-linux $path)
-
-export PATH
-
+# Fix for ssh terminal
 export TERM=xterm-256color
