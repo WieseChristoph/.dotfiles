@@ -85,6 +85,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 
 - arandr
 - base-devel
+- blueman
 - discord
 - dmenu
 - feh
@@ -133,6 +134,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - spotify-launcher
 - stow
 - thunderbird
+- tldr
 - tmux
 - ttf-dejavu
 - ttf-firacode-nerd
