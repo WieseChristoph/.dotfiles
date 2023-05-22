@@ -118,6 +118,8 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - papirus-icon-theme
 - pavucontrol
 - pcmanfm
+- perl-file-homedir
+- perl-yaml-tiny
 - picom
 - pipewire
 - pipewire-alsa
