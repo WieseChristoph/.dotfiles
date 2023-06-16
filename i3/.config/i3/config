@@ -234,7 +234,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Rofi
-bindsym $mod+d exec "zsh -c 'rofi -show drun'"
+bindsym $mod+d exec "sh -c 'rofi -show drun'"
 
 # Start screenshot tool
 bindsym Print exec "flameshot gui"
