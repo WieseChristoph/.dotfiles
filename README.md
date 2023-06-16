@@ -93,6 +93,20 @@ Mount it to a folder (automatically done in i3 config)
 rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 ```
 
+# NodeJS
+
+Install NodeJS
+
+```bash
+volta install node
+```
+
+Install pnpm
+
+```bash
+volta install pnpm
+```
+
 # Packages
 
 ### Pacman
