@@ -115,7 +115,6 @@ volta install pnpm
 - base-devel
 - blueman
 - discord
-- dmenu
 - feh
 - fish
 - flameshot
