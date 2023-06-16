@@ -33,6 +33,20 @@ pacman -Sy
 
 Display settings can be done with `nvidia-settings`.
 
+# Shell
+
+Set fish as default shell
+
+```bash
+chsh -s /usr/bin/fish
+```
+
+Install Starship
+
+```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+
 # LightDM
 
 Enable lightdm
@@ -89,6 +103,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - discord
 - dmenu
 - feh
+- fish
 - flameshot
 - git
 - gnome-keyring
@@ -101,11 +116,11 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - lib32-nvidia-utils
 - light-locker
 - lightdm
-- lightdm-gtk-greeter
+- lightdm-slick-greeter
 - lxappearance
 - man-db
 - materia-gtk-theme
-- neovim
+- nano
 - networkmanager
 - noto-fonts
 - noto-fonts-cjk
@@ -117,7 +132,6 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - openssh
 - papirus-icon-theme
 - pavucontrol
-- pcmanfm
 - perl-file-homedir
 - perl-yaml-tiny
 - picom
@@ -135,6 +149,7 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - smbclient
 - spotify-launcher
 - stow
+- thunar
 - thunderbird
 - tldr
 - tmux
@@ -151,7 +166,6 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 - xorg-server
 - xorg-xinit
 - xorg-xinput
-- zsh
 
 ### Yay
 
@@ -161,5 +175,6 @@ rclone mount gdrive: ~/GDrive --vfs-cache-mode writes (--daemon)
 ### Other
 
 - [TeX Live](https://www.tug.org/texlive/quickinstall.html)
-- [nvm](https://github.com/nvm-sh/nvm)
-- [pnpm](https://github.com/nvm-sh/nvm)
+- [Volta](https://docs.volta.sh/guide/getting-started)
+- [pnpm](https://pnpm.io/installation)
+- [Starship](https://starship.rs/)
